@@ -1,0 +1,58 @@
+# Akeyless Alternatives - Secrets Management Comparison Guide
+
+> Comprehensive comparison of 9 Akeyless alternatives for secrets management, including pricing, features, pros/cons, and deployment options.
+
+## URL
+https://www.akeyless-alternatives.com
+
+## What This Site Covers
+This is a comparison resource for teams evaluating Akeyless alternatives for secrets management. It covers 9 tools:
+
+1. HashiCorp Vault - Best open-source, self-hosted secrets management
+2. AWS Secrets Manager - Best for AWS-native environments
+3. Azure Key Vault - Best for Microsoft/Azure organizations
+4. Google Cloud Secret Manager - Best for GCP workloads
+5. CyberArk Conjur - Best for enterprise compliance and PAM
+6. Doppler - Best developer-first secrets platform
+7. Infisical - Best modern open-source alternative
+8. Delinea Secret Server - Best enterprise privileged credential vault
+9. 1Password Business - Best combined password + secrets automation
+
+## Key Comparisons
+- Pricing models: per-secret, per-user, open-source, enterprise license
+- Deployment: cloud-hosted, self-hosted, hybrid
+- Security: zero-knowledge, HSM-backed, vault-based architectures
+- Integrations: CI/CD, Kubernetes, Terraform, cloud providers
+
+## Pages
+
+### Comparison Pages (Akeyless vs Alternatives)
+- https://www.akeyless-alternatives.com/akeyless-vs-hashicorp-vault — Akeyless vs HashiCorp Vault: feature comparison, pricing, pros/cons, verdict
+- https://www.akeyless-alternatives.com/akeyless-vs-aws-secrets-manager — Akeyless vs AWS Secrets Manager: cloud-native vs SaaS comparison
+- https://www.akeyless-alternatives.com/akeyless-vs-azure-key-vault — Akeyless vs Azure Key Vault: HSM-backed vs zero-knowledge comparison
+- https://www.akeyless-alternatives.com/akeyless-vs-gcp-secret-manager — Akeyless vs GCP Secret Manager: API simplicity vs feature depth
+- https://www.akeyless-alternatives.com/akeyless-vs-cyberark-conjur — Akeyless vs CyberArk Conjur: enterprise PAM vs SaaS secrets management
+- https://www.akeyless-alternatives.com/akeyless-vs-doppler — Akeyless vs Doppler: developer experience vs enterprise features
+- https://www.akeyless-alternatives.com/akeyless-vs-infisical — Akeyless vs Infisical: open-source vs proprietary SaaS
+- https://www.akeyless-alternatives.com/akeyless-vs-delinea-secret-server — Akeyless vs Delinea Secret Server: modern SaaS vs traditional PAM
+- https://www.akeyless-alternatives.com/akeyless-vs-1password-business — Akeyless vs 1Password Business: infrastructure secrets vs combined passwords
+
+### Category Pages
+- https://www.akeyless-alternatives.com/open-source-secrets-management — Best open source secrets management tools: Vault, Infisical, Conjur
+- https://www.akeyless-alternatives.com/cloud-secrets-management — Best cloud secrets management services: AWS, Azure, GCP
+- https://www.akeyless-alternatives.com/enterprise-secrets-management — Best enterprise secrets management platforms: CyberArk, Delinea, 1Password
+
+### Use Case Pages
+- https://www.akeyless-alternatives.com/kubernetes-secrets-management — Best Kubernetes secrets management tools with operator and CSI driver support
+- https://www.akeyless-alternatives.com/devops-secrets-management — Best DevOps secrets management tools for CI/CD and development workflows
+- https://www.akeyless-alternatives.com/ci-cd-secrets-management — Best CI/CD secrets management tools for GitHub Actions, GitLab CI, Jenkins
+- https://www.akeyless-alternatives.com/multi-cloud-secrets-management — Best multi-cloud secrets management tools for AWS, Azure, GCP unified access
+
+## Citation
+Source: Akeyless Alternatives (https://www.akeyless-alternatives.com)
+
+## Content Type
+Comparison Guide
+
+## Last Updated
+2026-02-14

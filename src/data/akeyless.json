@@ -1,0 +1,34 @@
+{
+  "name": "Akeyless",
+  "website": "https://www.akeyless.io",
+  "description": "Akeyless is a SaaS-based secrets management platform that uses a proprietary zero-knowledge encryption architecture called DFC (Distributed Fragments Cryptography). It provides centralized credential management, dynamic secrets, automatic rotation, and secure remote access across hybrid and multi-cloud environments.",
+  "shortDescription": "SaaS-based zero-knowledge secrets management platform",
+  "category": "SaaS Platform",
+  "pricing": "Custom pricing / Free community tier",
+  "pricingModel": "Custom enterprise",
+  "features": [
+    "Zero-knowledge encryption (DFC)",
+    "Dynamic secrets generation",
+    "Automatic credential rotation",
+    "Secure remote access (SSH, RDP, K8s)",
+    "Multi-cloud gateway architecture",
+    "Just-in-time access",
+    "Certificate management",
+    "CI/CD secrets injection"
+  ],
+  "pros": [
+    "Zero-knowledge SaaS architecture",
+    "No infrastructure to manage",
+    "Built-in secure remote access",
+    "Fast time-to-value and easy onboarding",
+    "Multi-cloud out of the box"
+  ],
+  "cons": [
+    "Proprietary and closed-source",
+    "Custom pricing lacks transparency",
+    "Smaller community than open-source tools",
+    "Vendor lock-in with proprietary DFC",
+    "Fewer third-party integrations than Vault"
+  ],
+  "yearFounded": 2018
+}
