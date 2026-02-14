@@ -1,6 +1,4 @@
-import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { getAllAlternatives, getAlternativeBySlug } from '@/lib/alternatives';
+import { getAlternativeBySlug } from '@/lib/alternatives';
 import { getRelatedLinksForComparison } from '@/lib/internal-links';
 import akeylessData from '@/data/akeyless.json';
 import PageHero from '@/components/PageHero';
@@ -11,47 +9,12 @@ import PageFAQ from '@/components/PageFAQ';
 import InternalLinks from '@/components/InternalLinks';
 import Footer from '@/components/Footer';
 
-interface PageProps {
-  params: Promise<{ slug: string }>;
+interface ComparisonTemplateProps {
+  slug: string;
 }
 
-export function generateStaticParams() {
-  return getAllAlternatives().map((alt) => ({ slug: alt.slug }));
-}
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const alternative = getAlternativeBySlug(slug);
-  if (!alternative) return {};
-
-  const title = `Akeyless vs ${alternative.name} (2026) — Which Is Better?`;
-  const description = `Compare Akeyless vs ${alternative.name} for secrets management. Feature comparison, pricing, pros/cons, and verdict to help you choose the right tool.`;
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: 'article',
-      url: `https://www.akeyless-alternatives.com/akeyless-vs-${slug}`,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-    },
-    alternates: {
-      canonical: `https://www.akeyless-alternatives.com/akeyless-vs-${slug}`,
-    },
-  };
-}
-
-export default async function ComparisonPage({ params }: PageProps) {
-  const { slug } = await params;
-  const alternative = getAlternativeBySlug(slug);
-  if (!alternative) notFound();
-
+export default function ComparisonTemplate({ slug }: ComparisonTemplateProps) {
+  const alternative = getAlternativeBySlug(slug)!;
   const comparison = alternative.akeylessComparison;
   const relatedLinks = getRelatedLinksForComparison(slug);
 
@@ -92,7 +55,6 @@ export default async function ComparisonPage({ params }: PageProps) {
     "applicationCategory": "SecurityApplication",
   };
 
-  // Build FAQ items for comparison page
   const comparisonFaqs = [
     {
       question: `What is the main difference between Akeyless and ${alternative.name}?`,
