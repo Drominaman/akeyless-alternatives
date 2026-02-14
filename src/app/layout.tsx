@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: "Compare the top 9 Akeyless alternatives for secrets management. Detailed comparison with pricing, features, pros/cons, and deployment options.",
     type: "website",
     locale: "en_US",
-    url: "https://www.akeyless-alternatives.com",
+    url: "https://www.akeylessalternative.com",
     siteName: "Akeyless Alternatives",
   },
   twitter: {
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.akeyless-alternatives.com",
+    canonical: "https://www.akeylessalternative.com",
   },
   verification: {
     google: "Rx-rywmCU3bYzeOhgHAVG75ZryD782hJENZHarhafj8",
@@ -67,7 +67,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Akeyless Alternatives",
-  "url": "https://www.akeyless-alternatives.com",
+  "url": "https://www.akeylessalternative.com",
   "description": "Compare the best Akeyless alternatives for secrets management. Detailed comparison of 9 tools including HashiCorp Vault, AWS Secrets Manager, Doppler, and more.",
 };
 
@@ -81,7 +81,7 @@ const articleSchema = {
   "author": {
     "@type": "Organization",
     "name": "Akeyless Alternatives",
-    "url": "https://www.akeyless-alternatives.com"
+    "url": "https://www.akeylessalternative.com"
   },
   "publisher": {
     "@type": "Organization",
@@ -97,7 +97,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="llms-txt" href="https://www.akeyless-alternatives.com/llms.txt" />
+        <link rel="llms-txt" href="https://www.akeylessalternative.com/llms.txt" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}

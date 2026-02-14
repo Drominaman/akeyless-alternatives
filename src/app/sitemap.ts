@@ -3,7 +3,7 @@ import { getAllAlternatives } from '@/lib/alternatives';
 import { getAllCategories } from '@/lib/categories';
 import { getAllUseCases } from '@/lib/use-cases';
 
-const BASE_URL = 'https://www.akeyless-alternatives.com';
+const BASE_URL = 'https://www.akeylessalternative.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -2,7 +2,7 @@ export function GET() {
   const body = `User-agent: *
 Allow: /
 
-Sitemap: https://www.akeyless-alternatives.com/sitemap.xml
+Sitemap: https://www.akeylessalternative.com/sitemap.xml
 `;
 
   return new Response(body, {

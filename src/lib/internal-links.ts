@@ -9,7 +9,7 @@ export interface InternalLink {
   type: 'comparison' | 'category' | 'use-case' | 'home';
 }
 
-const BASE_URL = 'https://www.akeyless-alternatives.com';
+const BASE_URL = 'https://www.akeylessalternative.com';
 
 export function getComparisonLinks(): InternalLink[] {
   return getAllAlternatives().map(alt => ({

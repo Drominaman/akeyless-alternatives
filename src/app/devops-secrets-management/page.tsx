@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     title: useCase.headline,
     description: useCase.metaDescription,
     type: 'article',
-    url: `https://www.akeyless-alternatives.com/${useCase.slug}`,
+    url: `https://www.akeylessalternative.com/${useCase.slug}`,
   },
   twitter: { card: 'summary_large_image', title: useCase.headline, description: useCase.metaDescription },
-  alternates: { canonical: `https://www.akeyless-alternatives.com/${useCase.slug}` },
+  alternates: { canonical: `https://www.akeylessalternative.com/${useCase.slug}` },
 };
 
 export default function DevOpsSecretsManagementPage() {

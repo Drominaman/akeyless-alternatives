@@ -15,7 +15,7 @@ export function getComparisonMetadata(slug: string): Metadata {
       title,
       description,
       type: 'article',
-      url: `https://www.akeyless-alternatives.com/akeyless-vs-${slug}`,
+      url: `https://www.akeylessalternative.com/akeyless-vs-${slug}`,
     },
     twitter: {
       card: 'summary_large_image',
@@ -23,7 +23,7 @@ export function getComparisonMetadata(slug: string): Metadata {
       description,
     },
     alternates: {
-      canonical: `https://www.akeyless-alternatives.com/akeyless-vs-${slug}`,
+      canonical: `https://www.akeylessalternative.com/akeyless-vs-${slug}`,
     },
   };
 }

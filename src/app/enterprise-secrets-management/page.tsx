@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     title: category.headline,
     description: category.metaDescription,
     type: 'article',
-    url: `https://www.akeyless-alternatives.com/${category.slug}`,
+    url: `https://www.akeylessalternative.com/${category.slug}`,
   },
   twitter: { card: 'summary_large_image', title: category.headline, description: category.metaDescription },
-  alternates: { canonical: `https://www.akeyless-alternatives.com/${category.slug}` },
+  alternates: { canonical: `https://www.akeylessalternative.com/${category.slug}` },
 };
 
 export default function EnterpriseSecretsManagementPage() {
