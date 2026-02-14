@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
+import Navigation from "@/components/Navigation";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
@@ -76,7 +77,7 @@ const articleSchema = {
   "headline": "9 Best Akeyless Alternatives in 2026 - Compare Secrets Management Tools",
   "description": "Compare 9 best Akeyless alternatives for 2026: Vault, AWS Secrets Manager, Doppler & more. Pricing, features, and deployment compared.",
   "datePublished": "2026-01-15",
-  "dateModified": "2026-02-13",
+  "dateModified": "2026-02-14",
   "author": {
     "@type": "Organization",
     "name": "Akeyless Alternatives",
@@ -107,8 +108,9 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
+        <Navigation />
         {children}
       </body>
     </html>

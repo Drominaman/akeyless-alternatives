@@ -140,9 +140,9 @@ export default async function ComparisonPage({ params }: PageProps) {
       {/* Verdict Banner */}
       <section className="py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-800 border border-blue-500/30 rounded-xl p-6 sm:p-8">
-            <h2 className="text-lg font-semibold text-blue-400 mb-3">The Verdict</h2>
-            <p className="text-slate-300 leading-relaxed">{comparison.verdict}</p>
+          <div className="bg-[#111] border-2 border-[#FF5733]/30 p-6 sm:p-8">
+            <h2 className="text-sm font-bold text-[#FF5733] mb-3 uppercase tracking-widest">The Verdict</h2>
+            <p className="text-neutral-300 leading-relaxed">{comparison.verdict}</p>
           </div>
         </div>
       </section>

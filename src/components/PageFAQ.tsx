@@ -29,36 +29,34 @@ export default function PageFAQ({ faqs, title = "Frequently Asked Questions", de
       <section className="py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
               {title}
             </h2>
             {description && (
-              <p className="text-slate-400 text-lg">
-                {description}
-              </p>
+              <p className="text-neutral-500 text-lg">{description}</p>
             )}
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-2">
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden"
+                className="group bg-[#111] border-2 border-white/10 overflow-hidden"
               >
-                <summary className="w-full text-left px-6 py-5 cursor-pointer list-none flex justify-between items-center hover:bg-slate-750/50 transition-colors [&::-webkit-details-marker]:hidden">
-                  <span className="text-white font-medium pr-4">{faq.question}</span>
+                <summary className="w-full text-left px-6 py-5 cursor-pointer list-none flex justify-between items-center hover:bg-white/5 transition-colors [&::-webkit-details-marker]:hidden">
+                  <span className="text-white font-bold pr-4">{faq.question}</span>
                   <svg
-                    className="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-200 group-open:rotate-180"
+                    className="w-4 h-4 text-neutral-500 flex-shrink-0 transition-transform duration-200 group-open:rotate-45"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    strokeWidth={2}
+                    strokeWidth={2.5}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    <path strokeLinecap="square" d="M12 4v16m8-8H4" />
                   </svg>
                 </summary>
-                <div className="px-6 pb-5 border-t border-slate-700/50">
-                  <p className="text-slate-300 leading-relaxed pt-4">{faq.answer}</p>
+                <div className="px-6 pb-5 border-t-2 border-white/5">
+                  <p className="text-neutral-400 leading-relaxed pt-4">{faq.answer}</p>
                 </div>
               </details>
             ))}

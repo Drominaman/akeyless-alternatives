@@ -54,39 +54,39 @@ export default function Home() {
       {/* Best Akeyless Alternatives by Use Case */}
       <section className="py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 sm:p-8">
-            <h2 className="text-xl font-semibold text-white mb-6">Best Akeyless Alternatives by Use Case</h2>
-            <p className="text-slate-400 text-sm mb-6">
+          <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
+            <h2 className="text-xl font-black text-white mb-6 uppercase tracking-tight">Best Akeyless Alternatives by Use Case</h2>
+            <p className="text-neutral-500 text-sm mb-6">
               Each Akeyless alternative excels in different scenarios. Here&apos;s a quick guide to the best option for your specific needs.
             </p>
             <div className="space-y-3">
-              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-slate-700/50 pb-3">
-                <span className="text-slate-300">Best open-source Akeyless alternative:</span>
-                <span className="text-white font-medium">HashiCorp Vault</span>
+              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-3">
+                <span className="text-neutral-400">Best open-source Akeyless alternative:</span>
+                <span className="text-white font-bold">HashiCorp Vault</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-slate-700/50 pb-3">
-                <span className="text-slate-300">Best for AWS-native environments:</span>
-                <span className="text-white font-medium">AWS Secrets Manager</span>
+              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-3">
+                <span className="text-neutral-400">Best for AWS-native environments:</span>
+                <span className="text-white font-bold">AWS Secrets Manager</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-slate-700/50 pb-3">
-                <span className="text-slate-300">Best for Microsoft / Azure organizations:</span>
-                <span className="text-white font-medium">Azure Key Vault</span>
+              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-3">
+                <span className="text-neutral-400">Best for Microsoft / Azure organizations:</span>
+                <span className="text-white font-bold">Azure Key Vault</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-slate-700/50 pb-3">
-                <span className="text-slate-300">Best for small development teams:</span>
-                <span className="text-white font-medium">Doppler or Infisical</span>
+              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-3">
+                <span className="text-neutral-400">Best for small development teams:</span>
+                <span className="text-white font-bold">Doppler or Infisical</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-slate-700/50 pb-3">
-                <span className="text-slate-300">Best for enterprise compliance &amp; PAM:</span>
-                <span className="text-white font-medium">CyberArk Conjur or Delinea</span>
+              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-3">
+                <span className="text-neutral-400">Best for enterprise compliance &amp; PAM:</span>
+                <span className="text-white font-bold">CyberArk Conjur or Delinea</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-slate-700/50 pb-3">
-                <span className="text-slate-300">Best free Akeyless alternative:</span>
-                <span className="text-white font-medium">HashiCorp Vault (OSS) or Infisical</span>
+              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-3">
+                <span className="text-neutral-400">Best free Akeyless alternative:</span>
+                <span className="text-white font-bold">HashiCorp Vault (OSS) or Infisical</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between">
-                <span className="text-slate-300">Best for combined password + secrets:</span>
-                <span className="text-white font-medium">1Password Business</span>
+                <span className="text-neutral-400">Best for combined password + secrets:</span>
+                <span className="text-white font-bold">1Password Business</span>
               </div>
             </div>
           </div>
@@ -97,15 +97,15 @@ export default function Home() {
       <section id="alternatives" className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
               Top 9 Akeyless Alternatives
             </h2>
-            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+            <p className="text-neutral-500 text-lg max-w-2xl mx-auto">
               Each Akeyless alternative evaluated on feature completeness, transparent pricing, deployment flexibility, and developer experience.
             </p>
           </div>
 
-          <p className="text-slate-300 text-base leading-relaxed max-w-4xl mx-auto mb-12 text-center">
+          <p className="text-neutral-400 text-base leading-relaxed max-w-4xl mx-auto mb-12 text-center">
             Below are the 9 best Akeyless alternatives for 2026. Open-source tools like HashiCorp Vault and Infisical
             offer self-hosting with no license cost. Cloud-native solutions from AWS, Azure, and Google provide managed
             services with deep provider integration. Enterprise platforms like CyberArk Conjur and Delinea focus on
@@ -113,7 +113,7 @@ export default function Home() {
             ease of use and CI/CD workflows.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {alternatives.map((alt) => (
               <AlternativeCard key={alt.id} alternative={alt} />
             ))}
@@ -130,54 +130,54 @@ export default function Home() {
       <section id="how-to-choose" className="py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
               How to Choose the Right Akeyless Alternative
             </h2>
-            <p className="text-slate-400 text-lg">
+            <p className="text-neutral-500 text-lg">
               Key criteria for evaluating Akeyless alternatives and choosing the best secrets management tool for your organization.
             </p>
           </div>
 
-          <div className="space-y-8">
-            <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 sm:p-8">
-              <h3 className="text-xl font-semibold text-white mb-3">Deployment Model</h3>
-              <p className="text-slate-300 leading-relaxed">
+          <div className="space-y-4">
+            <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-white mb-3">Deployment Model</h3>
+              <p className="text-neutral-400 leading-relaxed">
                 Decide whether you need a fully managed cloud service, a self-hosted solution, or a hybrid approach.
                 Cloud-native Akeyless alternatives like AWS Secrets Manager require zero infrastructure but lock you into a vendor.
                 Open-source options like HashiCorp Vault give you full control but require operational expertise.
               </p>
             </div>
 
-            <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 sm:p-8">
-              <h3 className="text-xl font-semibold text-white mb-3">Pricing and Total Cost</h3>
-              <p className="text-slate-300 leading-relaxed">
+            <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-white mb-3">Pricing and Total Cost</h3>
+              <p className="text-neutral-400 leading-relaxed">
                 Evaluate the total cost of ownership beyond the sticker price. Per-secret pricing (AWS, GCP) can scale
                 unpredictably. Per-user models (Doppler, Infisical) are more predictable for budgeting. Self-hosted open-source
                 Akeyless alternatives like Vault and Infisical are free to use but factor in the cost of infrastructure and operations staff.
               </p>
             </div>
 
-            <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 sm:p-8">
-              <h3 className="text-xl font-semibold text-white mb-3">Integrations and Ecosystem</h3>
-              <p className="text-slate-300 leading-relaxed">
+            <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-white mb-3">Integrations and Ecosystem</h3>
+              <p className="text-neutral-400 leading-relaxed">
                 Check that your secrets manager integrates with your CI/CD pipelines, container orchestration (Kubernetes),
                 infrastructure-as-code tools (Terraform, Ansible), and cloud providers. Among Akeyless alternatives,
                 HashiCorp Vault has the broadest ecosystem, while cloud-native tools offer the deepest integration within their own platforms.
               </p>
             </div>
 
-            <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 sm:p-8">
-              <h3 className="text-xl font-semibold text-white mb-3">Compliance and Audit</h3>
-              <p className="text-slate-300 leading-relaxed">
+            <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-white mb-3">Compliance and Audit</h3>
+              <p className="text-neutral-400 leading-relaxed">
                 For regulated industries, ensure your Akeyless alternative supports detailed audit logging, role-based access
                 control, and meets compliance frameworks like SOC 2, ISO 27001, HIPAA, or FedRAMP. Enterprise tools like
                 CyberArk Conjur and Delinea Secret Server excel in this area.
               </p>
             </div>
 
-            <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 sm:p-8">
-              <h3 className="text-xl font-semibold text-white mb-3">Scalability and Performance</h3>
-              <p className="text-slate-300 leading-relaxed">
+            <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-white mb-3">Scalability and Performance</h3>
+              <p className="text-neutral-400 leading-relaxed">
                 Consider how the tool performs at scale. Managed Akeyless alternatives handle scaling automatically but may have API rate
                 limits. Self-hosted solutions require capacity planning. Evaluate secret rotation capabilities, high availability
                 options, and disaster recovery features for your expected workload.

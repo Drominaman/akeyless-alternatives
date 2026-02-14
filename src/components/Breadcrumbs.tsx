@@ -27,21 +27,17 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <nav aria-label="Breadcrumb" className="text-sm text-slate-400">
+      <nav aria-label="Breadcrumb" className="text-sm text-neutral-500 font-medium">
         <ol className="flex items-center gap-1.5 flex-wrap">
           {items.map((item, index) => (
             <li key={index} className="flex items-center gap-1.5">
-              {index > 0 && (
-                <svg className="w-3.5 h-3.5 text-slate-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              )}
+              {index > 0 && <span className="text-neutral-700">/</span>}
               {item.href ? (
-                <Link href={item.href} className="hover:text-blue-400 transition-colors">
+                <Link href={item.href} className="hover:text-[#FF5733] transition-colors">
                   {item.label}
                 </Link>
               ) : (
-                <span className="text-slate-300">{item.label}</span>
+                <span className="text-neutral-300">{item.label}</span>
               )}
             </li>
           ))}
