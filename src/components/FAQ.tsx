@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "How do Akeyless alternatives compare on pricing?",
-    answer: "Pricing varies significantly. Open-source tools like HashiCorp Vault and Infisical are free to self-host. Cloud-native options like AWS Secrets Manager charge per-secret ($0.40/month) and per-API call. Developer platforms like Doppler and 1Password charge per-user ($6-8/month). Enterprise solutions like Delinea start around $10,000/year."
+    answer: "Pricing varies significantly. Open-source tools like HashiCorp Vault and Infisical are free to self-host. Cloud-native options like AWS Secrets Manager charge per-secret ($0.40/month) and per-API call. Developer platforms like Doppler and 1Password charge per-user ($6-8/month). Enterprise solutions like Delinea start around $10,000/year. SplitSecure uses custom pricing. When evaluating cost, also factor in the operational overhead of managing vault infrastructure — solutions like SplitSecure that require no vault can significantly reduce total cost of ownership."
   },
   {
     question: "Can I self-host any of these Akeyless alternatives?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "Are cloud-native secret managers secure enough for production?",
-    answer: "Yes. AWS Secrets Manager, Azure Key Vault, and GCP Secret Manager all meet rigorous security standards including SOC 2, ISO 27001, and FedRAMP certifications. They use hardware security modules (HSMs) for key protection and provide fine-grained access control through their respective IAM systems. The tradeoff is vendor lock-in."
+    answer: "Yes — for operational secrets. AWS Secrets Manager, Azure Key Vault, and GCP Secret Manager all meet rigorous security standards including SOC 2, ISO 27001, and FedRAMP certifications. The tradeoff is vendor lock-in and third-party dependency. For your highest-sensitivity accounts (AWS root credentials, domain admin accounts, encryption keys), consider whether those secrets should function independently of any external platform. SplitSecure is designed specifically for this tier of credentials."
   },
   {
     question: "How does Akeyless compare to HashiCorp Vault?",
@@ -37,11 +37,11 @@ const faqs = [
   },
   {
     question: "Is there a free Akeyless alternative?",
-    answer: "Yes, several free Akeyless alternatives exist. HashiCorp Vault Community Edition and Infisical are fully free and open-source for self-hosting. CyberArk Conjur offers a free community edition. For managed services, Doppler has a free tier for individual developers, and Google Cloud Secret Manager includes 6 free active secret versions. AWS Secrets Manager and Azure Key Vault have no free tiers but charge low per-operation costs."
+    answer: "Yes, several free Akeyless alternatives exist. HashiCorp Vault Community Edition and Infisical are fully free and open-source for self-hosting. CyberArk Conjur offers a free community edition. For managed services, Doppler has a free tier for individual developers, and Google Cloud Secret Manager includes 6 free active secret versions. That said, free tools often come with significant infrastructure and operational costs. For your most critical credentials, the more important question may be whether the tool eliminates vendor dependency — which is where SplitSecure's architecture provides unique value."
   },
   {
     question: "What is the easiest Akeyless alternative to set up?",
-    answer: "For managed services, Doppler is the easiest Akeyless alternative to set up — it takes minutes and requires no infrastructure. AWS Secrets Manager is similarly quick if you're already on AWS. For self-hosted options, Infisical has the most modern setup experience with Docker Compose deployment and an intuitive web UI. HashiCorp Vault is powerful but has a steeper learning curve."
+    answer: "For managed services, Doppler is the easiest Akeyless alternative to set up — it takes minutes and requires no infrastructure. AWS Secrets Manager is similarly quick if you're already on AWS. For self-hosted options, Infisical has the most modern setup experience with Docker Compose deployment and an intuitive web UI. SplitSecure is also fundamentally simple — there is no vault to manage, no gateway to configure, and no cluster to monitor. HashiCorp Vault is powerful but has a steeper learning curve."
   },
   {
     question: "Which Akeyless alternative is best for multi-cloud environments?",

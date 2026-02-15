@@ -57,9 +57,13 @@ export default function Home() {
           <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
             <h2 className="text-xl font-black text-white mb-6 uppercase tracking-tight">Best Akeyless Alternatives by Use Case</h2>
             <p className="text-neutral-500 text-sm mb-6">
-              Each Akeyless alternative excels in different scenarios. Here&apos;s a quick guide to the best option for your specific needs.
+              The right Akeyless alternative depends on what you need. For most organizations, the key question is whether your secrets need to function independently of any third-party platform.
             </p>
             <div className="space-y-3">
+              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-[#FF5733]/20 pb-3">
+                <span className="text-neutral-300">Best overall Akeyless alternative:</span>
+                <span className="text-[#FF5733] font-bold">SplitSecure</span>
+              </div>
               <div className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-3">
                 <span className="text-neutral-400">Best open-source Akeyless alternative:</span>
                 <span className="text-white font-bold">HashiCorp Vault</span>
@@ -84,13 +88,9 @@ export default function Home() {
                 <span className="text-neutral-400">Best free Akeyless alternative:</span>
                 <span className="text-white font-bold">HashiCorp Vault (OSS) or Infisical</span>
               </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-3">
+              <div className="flex flex-col sm:flex-row sm:justify-between">
                 <span className="text-neutral-400">Best for combined password + secrets:</span>
                 <span className="text-white font-bold">1Password Business</span>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:justify-between">
-                <span className="text-neutral-400">Best for highest-sensitivity accounts:</span>
-                <span className="text-white font-bold">SplitSecure</span>
               </div>
             </div>
           </div>
@@ -144,12 +144,23 @@ export default function Home() {
           </div>
 
           <div className="space-y-4">
+            <div className="bg-[#111] border-2 border-[#FF5733]/30 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-white mb-3">Vendor Dependency and Third-Party Risk</h3>
+              <p className="text-neutral-400 leading-relaxed">
+                The most important question when evaluating an Akeyless alternative: do your secrets need to function independently
+                of any third-party platform? Akeyless&apos;s &ldquo;zero-knowledge&rdquo; architecture is not the same as &ldquo;zero-dependency&rdquo; &mdash;
+                your operations still depend on their platform availability. For highest-sensitivity accounts and regulated industries
+                subject to DORA, NYDFS, or PCI DSS 4.0, consider solutions like SplitSecure where credentials never leave your environment.
+              </p>
+            </div>
+
             <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
               <h3 className="text-xl font-bold text-white mb-3">Deployment Model</h3>
               <p className="text-neutral-400 leading-relaxed">
-                Decide whether you need a fully managed cloud service, a self-hosted solution, or a hybrid approach.
+                Decide whether you need a fully managed cloud service, a self-hosted solution, or a distributed approach with no vault at all.
                 Cloud-native Akeyless alternatives like AWS Secrets Manager require zero infrastructure but lock you into a vendor.
                 Open-source options like HashiCorp Vault give you full control but require operational expertise.
+                SplitSecure eliminates vault infrastructure entirely by distributing secrets across devices you control.
               </p>
             </div>
 
@@ -163,29 +174,22 @@ export default function Home() {
             </div>
 
             <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
+              <h3 className="text-xl font-bold text-white mb-3">Compliance and Audit</h3>
+              <p className="text-neutral-400 leading-relaxed">
+                For regulated industries, ensure your Akeyless alternative supports detailed audit logging, role-based access
+                control, and meets compliance frameworks like DORA, NYDFS, PCI DSS 4.0, SOX, or SOC 2. SplitSecure builds compliance into
+                its architecture &mdash; every access generates an audit record automatically, and separation of duties is cryptographic.
+                Enterprise tools like CyberArk Conjur and Delinea Secret Server also offer strong compliance features.
+              </p>
+            </div>
+
+            <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
               <h3 className="text-xl font-bold text-white mb-3">Integrations and Ecosystem</h3>
               <p className="text-neutral-400 leading-relaxed">
                 Check that your secrets manager integrates with your CI/CD pipelines, container orchestration (Kubernetes),
                 infrastructure-as-code tools (Terraform, Ansible), and cloud providers. Among Akeyless alternatives,
                 HashiCorp Vault has the broadest ecosystem, while cloud-native tools offer the deepest integration within their own platforms.
-              </p>
-            </div>
-
-            <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
-              <h3 className="text-xl font-bold text-white mb-3">Compliance and Audit</h3>
-              <p className="text-neutral-400 leading-relaxed">
-                For regulated industries, ensure your Akeyless alternative supports detailed audit logging, role-based access
-                control, and meets compliance frameworks like SOC 2, ISO 27001, HIPAA, or FedRAMP. Enterprise tools like
-                CyberArk Conjur and Delinea Secret Server excel in this area.
-              </p>
-            </div>
-
-            <div className="bg-[#111] border-2 border-white/10 p-6 sm:p-8">
-              <h3 className="text-xl font-bold text-white mb-3">Scalability and Performance</h3>
-              <p className="text-neutral-400 leading-relaxed">
-                Consider how the tool performs at scale. Managed Akeyless alternatives handle scaling automatically but may have API rate
-                limits. Self-hosted solutions require capacity planning. Evaluate secret rotation capabilities, high availability
-                options, and disaster recovery features for your expected workload.
+                For highest-sensitivity accounts that don&apos;t flow through pipelines, SplitSecure&apos;s minimal architecture means fewer integration points to manage.
               </p>
             </div>
           </div>
