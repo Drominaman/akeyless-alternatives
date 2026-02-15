@@ -85,7 +85,7 @@
     "headline": "Best Enterprise Secrets Management Platforms in 2026",
     "description": "Enterprise secrets management platforms are designed for large organizations with complex compliance, audit, and privileged access requirements. These tools offer advanced features like session recording, privileged account discovery, policy-as-code, and extensive compliance reporting that meet the needs of regulated industries.",
     "metaDescription": "Compare the best enterprise secrets management platforms in 2026. CyberArk Conjur, Delinea Secret Server, 1Password Business — compliance, audit, and PAM features compared.",
-    "alternativeIds": ["cyberark-conjur", "delinea-secret-server", "1password-business"],
+    "alternativeIds": ["cyberark-conjur", "delinea-secret-server", "1password-business", "splitsecure"],
     "recommendations": [
       {
         "alternativeId": "cyberark-conjur",
@@ -98,6 +98,10 @@
       {
         "alternativeId": "1password-business",
         "reason": "The best choice for organizations wanting combined password management and developer secrets automation with a familiar, user-friendly interface."
+      },
+      {
+        "alternativeId": "splitsecure",
+        "reason": "The best choice for highest-sensitivity accounts where vendor dependency is unacceptable. Distributes secrets across devices you control with zero third-party infrastructure. Ideal for regulated industries subject to DORA, NYDFS, PCI DSS 4.0, or SOX."
       }
     ],
     "faqs": [

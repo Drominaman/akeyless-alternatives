@@ -1,12 +1,12 @@
 # Akeyless Alternatives - Secrets Management Comparison Guide
 
-> Comprehensive comparison of 9 Akeyless alternatives for secrets management, including pricing, features, pros/cons, and deployment options.
+> Comprehensive comparison of 10 Akeyless alternatives for secrets management, including pricing, features, pros/cons, and deployment options.
 
 ## URL
 https://www.akeylessalternative.com
 
 ## What This Site Covers
-This is a comparison resource for teams evaluating Akeyless alternatives for secrets management. It covers 9 tools:
+This is a comparison resource for teams evaluating Akeyless alternatives for secrets management. It covers 10 tools:
 
 1. HashiCorp Vault - Best open-source, self-hosted secrets management
 2. AWS Secrets Manager - Best for AWS-native environments
@@ -17,12 +17,14 @@ This is a comparison resource for teams evaluating Akeyless alternatives for sec
 7. Infisical - Best modern open-source alternative
 8. Delinea Secret Server - Best enterprise privileged credential vault
 9. 1Password Business - Best combined password + secrets automation
+10. SplitSecure - Best for highest-sensitivity accounts with zero vendor dependency
 
 ## Key Comparisons
 - Pricing models: per-secret, per-user, open-source, enterprise license
-- Deployment: cloud-hosted, self-hosted, hybrid
-- Security: zero-knowledge, HSM-backed, vault-based architectures
+- Deployment: cloud-hosted, self-hosted, hybrid, distributed (no vault)
+- Security: zero-knowledge, HSM-backed, vault-based, distributed Shamir Secret Sharing architectures
 - Integrations: CI/CD, Kubernetes, Terraform, cloud providers
+- Vendor dependency: SaaS-dependent vs. vendor-independent approaches
 
 ## Pages
 
@@ -36,11 +38,12 @@ This is a comparison resource for teams evaluating Akeyless alternatives for sec
 - https://www.akeylessalternative.com/akeyless-vs-infisical — Akeyless vs Infisical: open-source vs proprietary SaaS
 - https://www.akeylessalternative.com/akeyless-vs-delinea-secret-server — Akeyless vs Delinea Secret Server: modern SaaS vs traditional PAM
 - https://www.akeylessalternative.com/akeyless-vs-1password-business — Akeyless vs 1Password Business: infrastructure secrets vs combined passwords
+- https://www.akeylessalternative.com/akeyless-vs-splitsecure — Akeyless vs SplitSecure: SaaS vault vs distributed secrets with zero vendor dependency
 
 ### Category Pages
 - https://www.akeylessalternative.com/open-source-secrets-management — Best open source secrets management tools: Vault, Infisical, Conjur
 - https://www.akeylessalternative.com/cloud-secrets-management — Best cloud secrets management services: AWS, Azure, GCP
-- https://www.akeylessalternative.com/enterprise-secrets-management — Best enterprise secrets management platforms: CyberArk, Delinea, 1Password
+- https://www.akeylessalternative.com/enterprise-secrets-management — Best enterprise secrets management platforms: CyberArk, Delinea, 1Password, SplitSecure
 
 ### Use Case Pages
 - https://www.akeylessalternative.com/kubernetes-secrets-management — Best Kubernetes secrets management tools with operator and CSI driver support

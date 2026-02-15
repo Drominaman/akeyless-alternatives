@@ -15,7 +15,7 @@ export default function ComparisonTable({ alternatives }: ComparisonTableProps) 
             Akeyless Alternatives Feature Comparison
           </h2>
           <p className="text-neutral-500 text-lg max-w-2xl mx-auto">
-            Compare all 9 Akeyless alternatives side-by-side across pricing, deployment, and key capabilities.
+            Compare all 10 Akeyless alternatives side-by-side across pricing, deployment, and key capabilities.
           </p>
         </div>
 

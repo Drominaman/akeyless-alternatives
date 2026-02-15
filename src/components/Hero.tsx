@@ -16,7 +16,8 @@ export default function Hero() {
           </p>
           <p className="text-base text-neutral-500 max-w-2xl mx-auto mb-10 leading-relaxed">
             Whether you need an open-source alternative, deeper cloud-native integration,
-            or enterprise PAM capabilities, we&apos;ve compared the 9 best Akeyless alternatives
+            enterprise PAM capabilities, or zero vendor dependency for your highest-sensitivity accounts,
+            we&apos;ve compared the 10 best Akeyless alternatives
             to help you find the right secrets management tool for your team.
           </p>
 

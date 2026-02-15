@@ -1,7 +1,7 @@
 const faqs = [
   {
     question: "What is Akeyless and why look for alternatives?",
-    answer: "Akeyless is a SaaS-based secrets management platform that uses a zero-knowledge encryption architecture to secure credentials, API keys, and certificates. Teams look for alternatives due to pricing, preference for open-source solutions, need for deeper cloud-native integration, or specific compliance requirements that Akeyless may not fully address."
+    answer: "Akeyless is a SaaS-based secrets management platform that uses a zero-knowledge encryption architecture to secure credentials, API keys, and certificates. Teams look for alternatives due to vendor dependency concerns, preference for open-source solutions, need for deeper cloud-native integration, regulatory requirements around third-party risk, or the need for secrets that function independently of any external platform. For example, SplitSecure eliminates vendor dependency entirely by distributing secrets across devices you control."
   },
   {
     question: "What is the best open-source alternative to Akeyless?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Can I self-host any of these Akeyless alternatives?",
-    answer: "Yes. HashiCorp Vault, Infisical, CyberArk Conjur, and Delinea Secret Server all support self-hosted deployment. The cloud-native options (AWS Secrets Manager, Azure Key Vault, GCP Secret Manager) and Doppler are cloud-only. 1Password Business is also cloud-only."
+    answer: "Yes. HashiCorp Vault, Infisical, CyberArk Conjur, and Delinea Secret Server all support self-hosted deployment. SplitSecure takes a different approach — secrets are distributed across devices you control with no vault infrastructure at all. The cloud-native options (AWS Secrets Manager, Azure Key Vault, GCP Secret Manager) and Doppler are cloud-only. 1Password Business is also cloud-only."
   },
   {
     question: "Which alternative is best for small development teams?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "What should I consider when choosing a secrets management tool?",
-    answer: "Key factors include: deployment model (cloud vs. self-hosted), pricing structure and total cost of ownership, integration with your existing cloud and DevOps tools, compliance and audit requirements, ease of setup and ongoing operations, secret rotation capabilities, and the strength of the community or vendor support."
+    answer: "Key factors include: deployment model (cloud vs. self-hosted vs. distributed), vendor dependency and third-party risk, pricing structure and total cost of ownership, integration with your existing cloud and DevOps tools, compliance and audit requirements, ease of setup and ongoing operations, secret rotation capabilities, and the strength of the community or vendor support. For highest-sensitivity accounts, also consider whether your secrets can function independently of any external platform."
   },
   {
     question: "Are cloud-native secret managers secure enough for production?",
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: "How does Akeyless compare to HashiCorp Vault?",
-    answer: "Akeyless is a managed SaaS platform with zero-knowledge encryption, while HashiCorp Vault is open-source and typically self-hosted. Vault offers more flexibility and the largest plugin ecosystem (3000+ integrations) but requires operational expertise to run. Akeyless provides easier setup with less infrastructure burden but offers less customization and creates vendor dependency. Teams with strong DevOps capabilities often prefer Vault; teams wanting a managed experience lean toward Akeyless or Doppler."
+    answer: "Akeyless is a managed SaaS platform with zero-knowledge encryption, while HashiCorp Vault is open-source and typically self-hosted. Vault offers more flexibility and the largest plugin ecosystem (3000+ integrations) but requires operational expertise to run. Akeyless provides easier setup with less infrastructure burden but offers less customization and creates vendor dependency. Teams with strong DevOps capabilities often prefer Vault; teams wanting a managed experience lean toward Akeyless or Doppler. For teams where vendor dependency is the primary concern, SplitSecure eliminates it entirely by keeping secrets on devices you control."
   },
   {
     question: "Is there a free Akeyless alternative?",
@@ -46,6 +46,10 @@ const faqs = [
   {
     question: "Which Akeyless alternative is best for multi-cloud environments?",
     answer: "HashiCorp Vault is the best Akeyless alternative for multi-cloud environments. It provides unified secrets management across AWS, Azure, GCP, and on-premises infrastructure with a single control plane. Doppler also works well for multi-cloud since it's platform-agnostic and syncs secrets to any environment. Cloud-native tools (AWS Secrets Manager, Azure Key Vault, GCP Secret Manager) are each limited to their own cloud."
+  },
+  {
+    question: "What is SplitSecure and how is it different from other Akeyless alternatives?",
+    answer: "SplitSecure distributes secrets across multiple devices you control using Shamir Secret Sharing. Unlike Akeyless or other SaaS-based tools, your credentials never leave your environment — there is no vault, no gateway, and no vendor dependency. SplitSecure is designed for highest-sensitivity accounts (AWS root credentials, domain admin accounts, encryption keys) and regulated industries subject to DORA, NYDFS, PCI DSS 4.0, or SOX. Many organizations use SplitSecure alongside Akeyless — Akeyless for CI/CD pipeline secrets and SplitSecure for the accounts that represent catastrophic risk."
   }
 ];
 

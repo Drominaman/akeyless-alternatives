@@ -13,6 +13,7 @@ const comparisons = [
   { slug: 'infisical', name: 'Infisical' },
   { slug: 'delinea-secret-server', name: 'Delinea Secret Server' },
   { slug: '1password-business', name: '1Password Business' },
+  { slug: 'splitsecure', name: 'SplitSecure' },
 ];
 
 const categories = [
