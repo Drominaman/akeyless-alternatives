@@ -8,6 +8,7 @@ import ComparisonProsConsGrid from '@/components/comparison/ComparisonProsConsGr
 import PageFAQ from '@/components/PageFAQ';
 import InternalLinks from '@/components/InternalLinks';
 import Footer from '@/components/Footer';
+import FeaturedAlternative from '@/components/comparison/FeaturedAlternative';
 
 interface ComparisonTemplateProps {
   slug: string;
@@ -133,6 +134,8 @@ export default function ComparisonTemplate({ slug }: ComparisonTemplateProps) {
         title={`Akeyless vs ${alternative.name} FAQ`}
         description={`Common questions about choosing between Akeyless and ${alternative.name} for secrets management.`}
       />
+
+      <FeaturedAlternative currentSlug={slug} />
 
       <InternalLinks links={relatedLinks} title="Related Comparisons & Guides" />
 
