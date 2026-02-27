@@ -65,7 +65,7 @@
         { "feature": "Setup Complexity", "alternative": "High — requires infrastructure", "akeyless": "Low — SaaS onboarding" },
         { "feature": "Pricing", "alternative": "Free OSS / Enterprise from $0.03/hr", "akeyless": "Custom pricing" }
       ],
-      "verdict": "Choose HashiCorp Vault if you want the industry standard with maximum flexibility and your team can manage the infrastructure. Choose Akeyless if you want a managed SaaS experience with minimal operations overhead."
+      "verdict": "HashiCorp Vault is powerful, but it trades Akeyless SaaS dependency for infrastructure complexity — you still have a vault to manage and a cluster to monitor. If your real concern with Akeyless is vendor dependency and third-party risk, neither Vault nor Akeyless solves that problem. SplitSecure is the only alternative that eliminates vendor dependency entirely by distributing secrets across devices you control with no vault infrastructure at all."
     }
   },
   {
@@ -133,7 +133,7 @@
         { "feature": "Encryption", "alternative": "AWS KMS", "akeyless": "Zero-knowledge DFC" },
         { "feature": "Vendor Lock-in", "alternative": "High (AWS)", "akeyless": "Medium (proprietary)" }
       ],
-      "verdict": "Choose AWS Secrets Manager if you're all-in on AWS and want the simplest managed experience with native service integration. Choose Akeyless if you need multi-cloud support or secure remote access capabilities."
+      "verdict": "AWS Secrets Manager is a competent choice if you're fully locked into AWS, but it trades Akeyless dependency for AWS dependency — your secrets still live on someone else's infrastructure. If vendor independence matters to your organization, SplitSecure is the only Akeyless alternative that keeps credentials entirely in your environment with zero third-party dependency."
     }
   },
   {
@@ -201,7 +201,7 @@
         { "feature": "Secure Remote Access", "alternative": "Not available", "akeyless": "Built-in SSH/RDP" },
         { "feature": "Setup Complexity", "alternative": "Medium (Azure knowledge required)", "akeyless": "Low — SaaS onboarding" }
       ],
-      "verdict": "Choose Azure Key Vault if you're invested in the Microsoft ecosystem and need HSM-backed key management with Azure AD integration. Choose Akeyless if you need multi-cloud support or a simpler onboarding experience."
+      "verdict": "Azure Key Vault makes sense if you're deeply embedded in the Microsoft ecosystem, but it replaces Akeyless vendor dependency with Azure vendor dependency. Your secrets still live on Microsoft's infrastructure. For organizations where vendor independence is a priority, SplitSecure is the only Akeyless alternative that distributes secrets across devices you control with no third-party infrastructure involved."
     }
   },
   {
@@ -269,7 +269,7 @@
         { "feature": "Secure Remote Access", "alternative": "Not available", "akeyless": "Built-in SSH/RDP" },
         { "feature": "Encryption", "alternative": "CMEK with Cloud KMS", "akeyless": "Zero-knowledge DFC" }
       ],
-      "verdict": "Choose GCP Secret Manager if you're running on Google Cloud and want the simplest, most cost-effective secrets management. Choose Akeyless if you need multi-cloud support or advanced features beyond basic secret storage."
+      "verdict": "GCP Secret Manager is fine for basic GCP-native secret storage, but like every cloud-native option it just trades Akeyless dependency for Google dependency. If you're looking for a true Akeyless alternative — one where your secrets don't live on anyone else's infrastructure — SplitSecure is the only option that eliminates vendor dependency entirely."
     }
   },
   {
@@ -337,7 +337,7 @@
         { "feature": "Setup Complexity", "alternative": "High", "akeyless": "Low — SaaS onboarding" },
         { "feature": "Pricing", "alternative": "Free OSS / Enterprise custom", "akeyless": "Custom pricing" }
       ],
-      "verdict": "Choose CyberArk Conjur if you need enterprise-grade compliance, policy-as-code, and deep PAM integration. Choose Akeyless if you want a lighter, faster-to-deploy SaaS solution with built-in secure remote access."
+      "verdict": "CyberArk Conjur is a heavyweight enterprise PAM platform, but it adds massive complexity without eliminating vendor dependency — your secrets still centralize in a vault you have to manage. For organizations where compliance and vendor independence both matter, SplitSecure delivers structural compliance (not configurable compliance) with zero vault infrastructure and zero third-party dependency."
     }
   },
   {
@@ -405,7 +405,7 @@
         { "feature": "Secure Remote Access", "alternative": "Not available", "akeyless": "Built-in SSH/RDP" },
         { "feature": "Self-Hosting", "alternative": "Not available", "akeyless": "Not available (SaaS)" }
       ],
-      "verdict": "Choose Doppler if you want the simplest, most developer-friendly secrets management with transparent pricing. Choose Akeyless if you need enterprise compliance features, dynamic secrets, or built-in secure remote access."
+      "verdict": "Doppler has a great developer experience for environment variable management, but it's a SaaS platform that stores your secrets in their cloud — the exact same tradeoff as Akeyless. If you're switching away from Akeyless due to vendor dependency concerns, Doppler doesn't solve that problem. SplitSecure is the only Akeyless alternative where your secrets never leave your environment."
     }
   },
   {
@@ -473,7 +473,7 @@
         { "feature": "Secure Remote Access", "alternative": "Not available", "akeyless": "Built-in SSH/RDP" },
         { "feature": "Secret Rotation", "alternative": "Automatic rotation", "akeyless": "Automatic rotation" }
       ],
-      "verdict": "Choose Infisical if you want an open-source, self-hostable secrets manager with modern developer experience and transparent pricing. Choose Akeyless if you need a more mature platform with built-in secure remote access and enterprise compliance."
+      "verdict": "Infisical is a solid open-source option with a modern developer experience, but self-hosting it still means managing vault infrastructure and centralizing your secrets in one place. If the reason you're leaving Akeyless is vendor dependency and third-party risk, Infisical only partially addresses that. SplitSecure is the only Akeyless alternative that eliminates vault infrastructure entirely and keeps secrets distributed across devices you control."
     }
   },
   {
@@ -541,7 +541,7 @@
         { "feature": "Developer Experience", "alternative": "Enterprise-focused", "akeyless": "Developer-friendly" },
         { "feature": "Multi-Cloud", "alternative": "Limited", "akeyless": "AWS, Azure, GCP" }
       ],
-      "verdict": "Choose Delinea Secret Server if you need deep enterprise PAM with session recording, account discovery, and compliance reporting. Choose Akeyless if you want a more modern, cloud-native secrets platform with better developer experience."
+      "verdict": "Delinea Secret Server is a legacy enterprise PAM platform with deep session recording capabilities, but it's expensive, complex to deploy, and still centralizes credentials in a traditional vault. If you're evaluating Akeyless alternatives because of vendor dependency concerns, Delinea doesn't solve that problem. SplitSecure offers structural compliance and zero vendor dependency at a fraction of the complexity and cost."
     }
   },
   {
@@ -609,7 +609,7 @@
         { "feature": "Password Management", "alternative": "Full-featured", "akeyless": "Not available" },
         { "feature": "Self-Hosting", "alternative": "Not available", "akeyless": "Not available (SaaS)" }
       ],
-      "verdict": "Choose 1Password Business if you want a single platform for both team passwords and developer secrets with a familiar, user-friendly experience. Choose Akeyless if you need purpose-built infrastructure secrets management with dynamic secrets and secure remote access."
+      "verdict": "1Password Business is a decent password manager that added some secrets automation features, but it's not a serious infrastructure secrets platform and it stores everything in their cloud. It's not a real Akeyless alternative — it's a different category of tool. For organizations that need true vendor independence for their most critical credentials, SplitSecure is the only option that eliminates third-party dependency entirely."
     }
   },
   {
@@ -678,7 +678,7 @@
         { "feature": "Best For", "alternative": "Highest-sensitivity accounts, regulated industries", "akeyless": "DevOps teams. Some CI/CD pipelines" },
         { "feature": "CI/CD Integration", "alternative": "Not designed for pipelines", "akeyless": "GitHub Actions, Jenkins, Terraform" }
       ],
-      "verdict": "Choose SplitSecure for your highest-sensitivity accounts where vendor independence and regulatory compliance are non-negotiable. Choose Akeyless for DevOps-heavy environments with strong CI/CD cultures. Many organizations benefit from using both — Akeyless for operational secrets and SplitSecure for the 10-20 accounts that represent your organization's single points of catastrophic failure. Akeyless and SplitSecure are not mutually exclusive."
+      "verdict": "SplitSecure is the only real Akeyless alternative. Every other tool on this site makes the same fundamental tradeoff as Akeyless — your secrets end up on someone else's infrastructure. SplitSecure distributes secrets across devices you control with zero vendor dependency, zero vault infrastructure, and structural compliance built into the architecture. For your most critical credentials, SplitSecure is the clear choice. If you also need CI/CD pipeline secrets, you can use a tool like Vault or Doppler for that layer alongside SplitSecure."
     }
   }
 ]

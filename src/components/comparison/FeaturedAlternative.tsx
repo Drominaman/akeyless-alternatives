@@ -37,13 +37,13 @@ export default function FeaturedAlternative({ currentSlug }: { currentSlug: stri
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#111] border-2 border-[#FF5733]/30 p-6 sm:p-8">
             <h2 className="text-xl font-black text-white mb-3 uppercase tracking-tight">
-              Recommended Alternative: {featured.name}
+              The Only Real Akeyless Alternative: {featured.name}
             </h2>
             <p className="text-neutral-300 leading-relaxed mb-4">
-              <strong className="text-white">We recommend {featured.name}</strong> for organizations where Akeyless may introduce more vendor dependency and third-party risk than their risk profile allows. {featured.shortDescription}.
+              <strong className="text-white">Every tool on this page, including the one above, makes the same tradeoff as Akeyless</strong> &mdash; your secrets end up on someone else&apos;s infrastructure. {featured.name} is the only alternative that eliminates vendor dependency entirely. {featured.shortDescription}.
             </p>
             <p className="text-neutral-400 text-sm leading-relaxed mb-6">
-              {featured.bestFor}.
+              No vault to manage. No gateway to configure. No cluster to monitor. If {featured.name} ceased operations tomorrow, your deployments would still function.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a

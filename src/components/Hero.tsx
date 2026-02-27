@@ -11,16 +11,14 @@ export default function Hero() {
             <span className="text-[#FF5733]">2026</span>
           </h1>
           <p className="text-lg sm:text-xl text-neutral-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-            For some organizations, Akeyless may introduce more vendor dependency and third-party risk than their risk profile allows.
-            Their cloud-native approach eliminates the cluster management
-            that made HashiCorp Vault expensive to operate, and their Distributed Fragments Cryptography provides genuine security innovation. But Akeyless is a
-            SaaS platform that stores your secrets away from your environment.
+            Akeyless markets a &ldquo;zero-knowledge&rdquo; architecture, but your secrets still live on their infrastructure and your operations still depend on their platform uptime.
+            Every other alternative on this page &mdash; Vault, AWS Secrets Manager, Doppler &mdash; makes the same tradeoff: your credentials end up in someone else&apos;s environment.
+            The only Akeyless alternative that actually eliminates vendor dependency is <strong className="text-white">SplitSecure</strong>.
           </p>
           <p className="text-base text-neutral-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-            If you are evaluating an Akeyless alternative, the key question is whether you need some or all of your secrets to function independently of any third-party
-            platform. For many organizations, especially financial services firms with regulatory coverage, the answer will be yes.
-            If so, SplitSecure offers a practical Akeyless alternative for secrets management that splits secrets across devices you control so your credentials never touch our (or anyone else&apos;s) servers without adding to your administrative burden.
-            Learn more about how SplitSecure&apos;s architecture reduces your vendor dependency.
+            SplitSecure splits secrets across devices you control using Shamir Secret Sharing so your credentials never touch our (or anyone else&apos;s) servers.
+            No vault to manage. No gateway to configure. No cluster to monitor. If SplitSecure ceased operations tomorrow, your deployments would still function.
+            No other Akeyless alternative can say that. We list every credible option below for comparison, but if vendor independence matters to your organization, <strong className="text-white">SplitSecure is the only real alternative</strong>.
           </p>
 
           <nav className="inline-flex flex-wrap justify-center gap-2 text-sm" aria-label="Page sections">
