@@ -114,7 +114,7 @@ export default function Home() {
             offer self-hosting with no license cost. Cloud-native solutions from AWS, Azure, and Google provide managed
             services with deep provider integration. Enterprise platforms like CyberArk Conjur and Delinea focus on
             privileged access management and compliance. Developer-first platforms like Doppler and 1Password prioritize
-            ease of use and CI/CD workflows. SplitSecure offers a practical alternative that splits secrets across devices you control so your credentials never touch any third-party server, without adding to your administrative burden.
+            ease of use and CI/CD workflows. SplitSecure offers a practical Akeyless alternative for secrets management that splits secrets across devices you control so your credentials never touch our (or anyone else&apos;s) servers without adding to your administrative burden.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -147,9 +147,8 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-3">Vendor Dependency and Third-Party Risk</h3>
               <p className="text-neutral-400 leading-relaxed">
                 The most important question when evaluating an Akeyless alternative: do your secrets need to function independently
-                of any third-party platform? Akeyless&apos;s &ldquo;zero-knowledge&rdquo; architecture is not the same as &ldquo;zero-dependency&rdquo; &mdash;
-                your operations still depend on their platform availability. For highest-sensitivity accounts and regulated industries
-                subject to DORA, NYDFS, PCI DSS 4.0, or SOX, consider solutions like SplitSecure where credentials never leave your environment.
+                of any third-party platform? Akeyless markets themselves as &ldquo;zero-knowledge,&rdquo; meaning they cannot access your secrets even if their systems are breached. But &ldquo;zero-knowledge&rdquo; is not the same as &ldquo;zero-dependency.&rdquo;
+                Your operations still depend on Akeyless&apos; platform availability. If Akeyless experiences an outage, your secrets retrieval is affected. In contrast, if SplitSecure ceased operations tomorrow, your deployments would still function.
               </p>
             </div>
 
@@ -159,7 +158,7 @@ export default function Home() {
                 Decide whether you need a fully managed cloud service, a self-hosted solution, or a distributed approach with no vault at all.
                 Cloud-native Akeyless alternatives like AWS Secrets Manager require zero infrastructure but lock you into a vendor.
                 Open-source options like HashiCorp Vault give you full control but require operational expertise.
-                SplitSecure eliminates vault infrastructure entirely by distributing secrets across devices you control.
+                SplitSecure eliminates vault infrastructure entirely &mdash; there is no vault to manage, no gateway to configure, no cluster to monitor. The distributed architecture eliminates the single components that typically require dedicated expertise to operate and troubleshoot.
               </p>
             </div>
 
@@ -176,8 +175,8 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-3">Compliance and Audit</h3>
               <p className="text-neutral-400 leading-relaxed">
                 For regulated industries, ensure your Akeyless alternative supports detailed audit logging, role-based access
-                control, and meets compliance frameworks like DORA, NYDFS, PCI DSS 4.0, SOX, or SOC 2. SplitSecure builds compliance into
-                its architecture &mdash; every access generates an audit record automatically, and separation of duties is cryptographic.
+                control, and meets compliance frameworks like DORA, NYDFS, PCI DSS 4.0, SOX, or SOC 2. With SplitSecure, compliance is built into
+                the architecture &mdash; every access is logged because you cannot use the system without generating a record. This is not a feature you configure or a policy you enforce. Separation of duties is cryptographic, so when auditors ask whether a single compromised account could cause irreversible damage, the answer is: &ldquo;architecturally no.&rdquo;
                 Enterprise tools like CyberArk Conjur and Delinea Secret Server also offer strong compliance features.
               </p>
             </div>

@@ -1,7 +1,7 @@
 const faqs = [
   {
     question: "What is Akeyless and why look for alternatives?",
-    answer: "Akeyless is a SaaS-based secrets management platform that uses a zero-knowledge encryption architecture to secure credentials, API keys, and certificates. Teams look for alternatives due to vendor dependency concerns, preference for open-source solutions, need for deeper cloud-native integration, regulatory requirements around third-party risk, or the need for secrets that function independently of any external platform. For example, SplitSecure reduces vendor dependency by distributing secrets across devices you control so your credentials never touch any third-party server."
+    answer: "Akeyless is a SaaS-based secrets management platform that uses a zero-knowledge encryption architecture to secure credentials, API keys, and certificates. Teams look for alternatives due to vendor dependency concerns, preference for open-source solutions, need for deeper cloud-native integration, regulatory requirements around third-party risk, or the need for secrets that function independently of any external platform. For example, SplitSecure offers a practical Akeyless alternative for secrets management that splits secrets across devices you control so your credentials never touch our (or anyone else's) servers without adding to your administrative burden."
   },
   {
     question: "What is the best open-source alternative to Akeyless?",
@@ -33,15 +33,15 @@ const faqs = [
   },
   {
     question: "How does Akeyless compare to HashiCorp Vault?",
-    answer: "Akeyless is a managed SaaS platform with zero-knowledge encryption, while HashiCorp Vault is open-source and typically self-hosted. Vault offers more flexibility and the largest plugin ecosystem (3000+ integrations) but requires operational expertise to run. Akeyless provides easier setup with less infrastructure burden but offers less customization and creates vendor dependency. Teams with strong DevOps capabilities often prefer Vault; teams wanting a managed experience lean toward Akeyless or Doppler. For teams where vendor dependency is the primary concern, SplitSecure reduces it by keeping secrets on devices you control so your credentials never touch any third-party server."
+    answer: "Akeyless is a managed SaaS platform with zero-knowledge encryption, while HashiCorp Vault is open-source and typically self-hosted. Vault offers more flexibility and the largest plugin ecosystem (3000+ integrations) but requires operational expertise to run. Akeyless provides easier setup with less infrastructure burden but offers less customization and creates vendor dependency. Teams with strong DevOps capabilities often prefer Vault; teams wanting a managed experience lean toward Akeyless or Doppler. For teams where vendor dependency is the primary concern, SplitSecure offers a practical Akeyless alternative that splits secrets across devices you control so your credentials never touch our (or anyone else's) servers without adding to your administrative burden."
   },
   {
     question: "Is there a free Akeyless alternative?",
-    answer: "Yes, several free Akeyless alternatives exist. HashiCorp Vault Community Edition and Infisical are fully free and open-source for self-hosting. CyberArk Conjur offers a free community edition. For managed services, Doppler has a free tier for individual developers, and Google Cloud Secret Manager includes 6 free active secret versions. That said, free tools often come with significant infrastructure and operational costs. For your most critical credentials, the more important question may be whether the tool reduces vendor dependency — which is where SplitSecure's architecture provides unique value, keeping credentials on devices you control."
+    answer: "Yes, several free Akeyless alternatives exist. HashiCorp Vault Community Edition and Infisical are fully free and open-source for self-hosting. CyberArk Conjur offers a free community edition. For managed services, Doppler has a free tier for individual developers, and Google Cloud Secret Manager includes 6 free active secret versions. That said, free tools often come with significant infrastructure and operational costs. For your most critical credentials, the more important question may be whether the tool reduces vendor dependency — which is where SplitSecure offers a practical alternative that splits secrets across devices you control so your credentials never touch our (or anyone else's) servers."
   },
   {
     question: "What is the easiest Akeyless alternative to set up?",
-    answer: "For managed services, Doppler is the easiest Akeyless alternative to set up — it takes minutes and requires no infrastructure. AWS Secrets Manager is similarly quick if you're already on AWS. For self-hosted options, Infisical has the most modern setup experience with Docker Compose deployment and an intuitive web UI. SplitSecure is a fundamentally simpler alternative with almost no learning curve — there is no vault to manage, no gateway to configure, and no cluster to monitor. HashiCorp Vault is powerful but has a steeper learning curve."
+    answer: "For managed services, Doppler is the easiest Akeyless alternative to set up — it takes minutes and requires no infrastructure. AWS Secrets Manager is similarly quick if you're already on AWS. For self-hosted options, Infisical has the most modern setup experience with Docker Compose deployment and an intuitive web UI. A solution like SplitSecure is a fundamentally simpler alternative with almost no learning curve — there is no vault to manage, no gateway to configure, and no cluster to monitor. HashiCorp Vault is powerful but has a steeper learning curve."
   },
   {
     question: "Which Akeyless alternative is best for multi-cloud environments?",
@@ -49,19 +49,19 @@ const faqs = [
   },
   {
     question: "Is PAM necessary for cloud-native organizations?",
-    answer: "Yes. Credential compromise remains the leading attack vector across industries. The Change Healthcare breach started with a single compromised credential on a Citrix portal lacking MFA. The MOVEit breach compromised over 60 banks through one vulnerability. The question is not whether you need privileged access controls, but how much complexity you should accept to implement them."
+    answer: "100% yes. Credential compromise remains the leading attack vector across industries. The Change Healthcare breach started with a single compromised credential on a Citrix portal lacking MFA. The MOVEit breach compromised over 60 banks through one vulnerability. The question is not whether you need privileged access controls, but how much complexity you should accept to implement them."
   },
   {
     question: "How does SplitSecure handle audit requirements?",
-    answer: "Every access generates a record automatically. This is not a logging feature you configure — it is how SplitSecure's distributed architecture works. You cannot reconstruct a secret without creating an audit trail. For SOX, PCI DSS 4.0, and similar frameworks that require access logging for privileged accounts, compliance is built into SplitSecure's system."
+    answer: "Every access generates a record automatically. This is not a logging feature you configure. Rather, it's how SplitSecure's distributed architecture works. With SplitSecure, you cannot reconstruct a secret without creating an audit trail. For SOX, PCI DSS 4.0, and similar frameworks that require access logging for privileged accounts, compliance is built into SplitSecure's system."
   },
   {
     question: "Can SplitSecure integrate with CI/CD pipelines?",
-    answer: "SplitSecure is designed for human access to the highest-sensitivity accounts, not machine-to-machine secrets in automated pipelines. For pipeline secrets, solutions like Akeyless or HashiCorp Vault are typically more appropriate. Many organizations use both — Akeyless for pipeline secrets and SplitSecure for the accounts that represent catastrophic risk."
+    answer: "SplitSecure is designed for human access to the highest-sensitivity accounts, not machine-to-machine secrets in automated pipelines. For pipeline secrets, solutions like Akeyless or HashiCorp Vault are typically more appropriate. Many organizations use both, i.e., Akeyless for pipeline secrets and SplitSecure for the accounts that represent catastrophic risk."
   },
   {
     question: "What is SplitSecure and how is it different from other Akeyless alternatives?",
-    answer: "SplitSecure distributes secrets across multiple devices you control using Shamir Secret Sharing. Unlike Akeyless or other SaaS-based tools, your credentials never leave your environment — there is no vault to manage, no gateway to configure, no cluster to monitor, and no extra vendor dependency. The key difference is that Akeyless involves their platform in cryptographic operations whereas SplitSecure keeps credentials entirely in your environment. SplitSecure is designed for human access to highest-sensitivity accounts (AWS root credentials, domain admin accounts, encryption keys) and regulated industries subject to DORA, NYDFS, PCI DSS 4.0, or SOX. Many organizations use SplitSecure alongside Akeyless — Akeyless for CI/CD pipeline secrets and SplitSecure for the accounts that represent catastrophic risk."
+    answer: "Akeyless fragments keys across their cloud infrastructure using Distributed Fragments Cryptography. SplitSecure distributes secrets across devices you control using Shamir Secret Sharing. The key difference is that Akeyless involves their platform in cryptographic operations whereas SplitSecure keeps credentials entirely in your environment. There is no vault to manage, no gateway to configure, no cluster to monitor, and no extra vendor dependency. SplitSecure is designed for human access to the highest-sensitivity accounts (AWS root credentials, domain admin accounts, encryption keys) and regulated industries subject to DORA, NYDFS, PCI DSS 4.0, or SOX. Many organizations use SplitSecure alongside Akeyless — Akeyless for CI/CD pipeline secrets and SplitSecure for the accounts that represent catastrophic risk."
   }
 ];
 

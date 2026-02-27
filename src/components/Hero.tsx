@@ -11,15 +11,16 @@ export default function Hero() {
             <span className="text-[#FF5733]">2026</span>
           </h1>
           <p className="text-lg sm:text-xl text-neutral-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Looking for an Akeyless alternative? Akeyless&apos;s cloud-native approach eliminates the cluster management
+            For some organizations, Akeyless may introduce more vendor dependency and third-party risk than their risk profile allows.
+            Their cloud-native approach eliminates the cluster management
             that made HashiCorp Vault expensive to operate, and their Distributed Fragments Cryptography provides genuine security innovation. But Akeyless is a
-            SaaS platform that stores your secrets away from your environment. For some organizations, that
-            introduces more vendor dependency and third-party risk than their risk profile allows.
+            SaaS platform that stores your secrets away from your environment.
           </p>
           <p className="text-base text-neutral-500 max-w-2xl mx-auto mb-10 leading-relaxed">
             If you are evaluating an Akeyless alternative, the key question is whether you need some or all of your secrets to function independently of any third-party
             platform. For many organizations, especially financial services firms with regulatory coverage, the answer will be yes.
             If so, SplitSecure offers a practical Akeyless alternative for secrets management that splits secrets across devices you control so your credentials never touch our (or anyone else&apos;s) servers without adding to your administrative burden.
+            Learn more about how SplitSecure&apos;s architecture reduces your vendor dependency.
           </p>
 
           <nav className="inline-flex flex-wrap justify-center gap-2 text-sm" aria-label="Page sections">
