@@ -12,14 +12,14 @@ export default function Hero() {
           </h1>
           <p className="text-lg sm:text-xl text-neutral-400 max-w-3xl mx-auto mb-6 leading-relaxed">
             Looking for an Akeyless alternative? Akeyless&apos;s cloud-native approach eliminates the cluster management
-            that made HashiCorp Vault expensive, and their DFC encryption is genuinely innovative. But Akeyless is a
-            SaaS platform that stores your secrets away from your environment &mdash; and for many organizations, that
-            introduces more vendor dependency than their risk profile allows.
+            that made HashiCorp Vault expensive to operate, and their Distributed Fragments Cryptography provides genuine security innovation. But Akeyless is a
+            SaaS platform that stores your secrets away from your environment. For some organizations, that
+            introduces more vendor dependency and third-party risk than their risk profile allows.
           </p>
           <p className="text-base text-neutral-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-            We&apos;ve compared 10 Akeyless alternatives, from open-source tools to cloud-native services.
-            For organizations that need their most critical credentials to function independently of any third-party
-            platform, SplitSecure offers a practical alternative that splits secrets across devices you control.
+            If you are evaluating an Akeyless alternative, the key question is whether you need some or all of your secrets to function independently of any third-party
+            platform. For many organizations, especially financial services firms with regulatory coverage, the answer will be yes.
+            If so, SplitSecure offers a practical Akeyless alternative for secrets management that splits secrets across devices you control so your credentials never touch our (or anyone else&apos;s) servers without adding to your administrative burden.
           </p>
 
           <nav className="inline-flex flex-wrap justify-center gap-2 text-sm" aria-label="Page sections">

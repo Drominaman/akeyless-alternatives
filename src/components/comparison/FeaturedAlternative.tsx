@@ -40,7 +40,7 @@ export default function FeaturedAlternative({ currentSlug }: { currentSlug: stri
               Recommended Alternative: {featured.name}
             </h2>
             <p className="text-neutral-300 leading-relaxed mb-4">
-              <strong className="text-white">We recommend {featured.name}</strong> for organizations that need secrets management with zero vendor dependency. {featured.shortDescription}.
+              <strong className="text-white">We recommend {featured.name}</strong> for organizations where Akeyless may introduce more vendor dependency and third-party risk than their risk profile allows. {featured.shortDescription}.
             </p>
             <p className="text-neutral-400 text-sm leading-relaxed mb-6">
               {featured.bestFor}.

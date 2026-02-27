@@ -617,7 +617,7 @@
     "slug": "splitsecure",
     "name": "SplitSecure",
     "website": "https://www.splitsecure.com",
-    "description": "SplitSecure is a distributed secrets management platform that splits credentials across multiple devices you control using Shamir Secret Sharing. No single device holds a complete credential, and secrets never leave your environment. Designed for highest-sensitivity accounts in regulated industries where vendor dependency is unacceptable.",
+    "description": "SplitSecure is a distributed secrets management platform that splits credentials across multiple devices you control using Shamir Secret Sharing. No single device holds a complete credential, and secrets never leave your environment. Designed for highest-sensitivity accounts in regulated industries where reducing vendor dependency is a priority.",
     "shortDescription": "Distributed secrets management — no vault, no vendor dependency",
     "category": "Distributed Security",
     "pricing": "Contact for pricing",
@@ -634,7 +634,7 @@
       "MSP-safe credential management"
     ],
     "pros": [
-      "Zero vendor dependency — secrets work if SplitSecure goes down",
+      "Near-zero vendor dependency — your deployments still function if SplitSecure ceases operations",
       "Secrets never leave your environment",
       "Architecturally resistant to social engineering and account takeover",
       "Built-in compliance for DORA, NYDFS, PCI DSS 4.0, SOX",
@@ -653,7 +653,7 @@
     "yearFounded": 2024,
     "useCases": [],
     "akeylessComparison": {
-      "summary": "SplitSecure distributes secrets across devices you control using Shamir Secret Sharing, eliminating vendor dependency entirely. While Akeyless provides a SaaS vault with DFC encryption, SplitSecure ensures your credentials never touch any third-party server — making it ideal for highest-sensitivity accounts and regulated industries.",
+      "summary": "Akeyless fragments keys across their cloud infrastructure using Distributed Fragments Cryptography. SplitSecure distributes secrets across devices you control using Shamir Secret Sharing. The key difference is that Akeyless involves their platform in cryptographic operations whereas SplitSecure keeps credentials entirely in your environment — making SplitSecure ideal for highest-sensitivity accounts and regulated industries where reducing vendor dependency is a priority.",
       "whenToChooseThis": [
         "You need secrets that function independently of any third-party platform",
         "You are in a regulated industry subject to DORA, NYDFS, PCI DSS 4.0, or SOX",
@@ -670,12 +670,12 @@
       ],
       "featureComparison": [
         { "feature": "Architecture", "alternative": "Distributed across devices (no vault)", "akeyless": "SaaS vault + customer gateway" },
-        { "feature": "Vendor Dependency", "alternative": "None — secrets exist independently", "akeyless": "Requires Akeyless platform uptime" },
+        { "feature": "Vendor Dependency", "alternative": "None for certain configurations. Secrets exist independently but auditing services could be hosted by SplitSecure on request", "akeyless": "Requires Akeyless platform uptime" },
         { "feature": "Secret Location", "alternative": "Fragments on your devices only", "akeyless": "Fragments in Akeyless cloud" },
-        { "feature": "Infrastructure", "alternative": "Minimal — auditing service only", "akeyless": "Gateway deployment required" },
+        { "feature": "Infrastructure", "alternative": "Minimal. Auditing service only (can be hosted by SplitSecure also)", "akeyless": "Gateway deployment required" },
         { "feature": "Cryptography", "alternative": "Shamir Secret Sharing", "akeyless": "Distributed Fragments Cryptography" },
         { "feature": "Audit Trail", "alternative": "Automatic — built into architecture", "akeyless": "Configurable audit logging" },
-        { "feature": "Best For", "alternative": "Highest-sensitivity accounts, regulated industries", "akeyless": "DevOps teams, CI/CD pipelines" },
+        { "feature": "Best For", "alternative": "Highest-sensitivity accounts, regulated industries", "akeyless": "DevOps teams, some CI/CD pipelines" },
         { "feature": "CI/CD Integration", "alternative": "Not designed for pipelines", "akeyless": "GitHub Actions, Jenkins, Terraform" }
       ],
       "verdict": "Choose SplitSecure for your highest-sensitivity accounts where vendor independence and regulatory compliance are non-negotiable. Choose Akeyless for DevOps-heavy environments with CI/CD pipelines. Many organizations benefit from using both — Akeyless for operational secrets and SplitSecure for the accounts that represent catastrophic risk."

@@ -114,8 +114,7 @@ export default function Home() {
             offer self-hosting with no license cost. Cloud-native solutions from AWS, Azure, and Google provide managed
             services with deep provider integration. Enterprise platforms like CyberArk Conjur and Delinea focus on
             privileged access management and compliance. Developer-first platforms like Doppler and 1Password prioritize
-            ease of use and CI/CD workflows. SplitSecure offers a distributed approach with zero vendor dependency for
-            highest-sensitivity accounts.
+            ease of use and CI/CD workflows. SplitSecure offers a practical alternative that splits secrets across devices you control so your credentials never touch any third-party server, without adding to your administrative burden.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -150,7 +149,7 @@ export default function Home() {
                 The most important question when evaluating an Akeyless alternative: do your secrets need to function independently
                 of any third-party platform? Akeyless&apos;s &ldquo;zero-knowledge&rdquo; architecture is not the same as &ldquo;zero-dependency&rdquo; &mdash;
                 your operations still depend on their platform availability. For highest-sensitivity accounts and regulated industries
-                subject to DORA, NYDFS, or PCI DSS 4.0, consider solutions like SplitSecure where credentials never leave your environment.
+                subject to DORA, NYDFS, PCI DSS 4.0, or SOX, consider solutions like SplitSecure where credentials never leave your environment.
               </p>
             </div>
 
